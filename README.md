@@ -35,10 +35,10 @@
 ## Team
 
 	Accountability partner:
-	<ul>
-		<li>@mattwainwright-dev</li>
-		<li>@SnDyMrn13</li>
-		<li>@Anastasia-2012</li>
+	
+	  👉@mattwainwright-dev
+	  👉@SnDyMrn13
+	  👉@Anastasia-2012
 	
 
 
