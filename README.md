@@ -15,13 +15,28 @@
 	Dataset: Pokedex
 
 		Example:
+			
+			id: 1
+			name: Bulbasaur
+			ability: Overgrow
+			type: grass
+			classfication: seed pokemon
+			hp: 45
+			attack: 49
+			defense: 49
+			sp_attack: 65
+			sp_defense: 65
+			speed: 45
+			pokedex_number: 1
+			capture_rate: 45
+			height_m: 0.7
+			weight_kg: 6.9
+			generation: 1
+			legendary: No
+			percentage_male: 88.1
+			experience_growth: 1059860
+			image: bulbasaur.png ( https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png )
 
-			id,name,ability,type,classfication,hp,attack,defense,
-			sp_attack,sp_defense,speed,pokedex_number,capture_rate,
-			height_m,weight_kg,generation,is_legendary,percentage_male,experience_growth,image
-
-			1,Bulbasaur,Overgrow,grass,Seed Pokemon,45,49,49,65,65,45,1,45,0.7,6.9,1,0,
-			88.1,1059860,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
 
 
 
