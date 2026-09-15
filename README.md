@@ -14,6 +14,11 @@
 
 	![My wireframe](wireframe.png)
 	
+## What changed
+
+	I changed how I want the layout of the information.
+
+
 ### Sections
 	pokedex selections
 	pokemon lists
