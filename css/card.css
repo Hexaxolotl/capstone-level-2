@@ -1,33 +1,40 @@
 
 #pokeCard {
-  background: #0d0d0d;              /* dark HOME-style background */
+  background: #0d0d0d;             
   padding: 20px;
+  width:100%;
   border-radius: 20px;
-  box-shadow: 0 0 20px #00eaff;     /* neon glow */
+  box-shadow: 0 0 20px #00eaff;   
   color: white;
 }
 
 /* --- POKÉMON IMAGE --- */
 #pokeImg {
-  width: 300px;        /* check the size need to make bigger */
+  width: 420px;        /* check the size need to make bigger */
   height: auto;
   display: block;
-  margin: 10px auto;
+  margin: 0;
   image-rendering: pixelated; /* makes the iomages look better */
   filter: drop-shadow(0 0 8px #d00000);
 }
 
-.poke-header {
-  text-align: center;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #00eaff; /* neon divider */
+.poke-header h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00eaff;
+}
+
+.poke-header p {
+  margin: 4px;
+  font-size: 1rem;
+
 }
 
 .poke-stats {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
   gap: 10px;
-  margin: 20px 0;
+  margin: 20px;
 }
 
 .poke-stats div {
@@ -40,11 +47,18 @@
 
 .poke-details {
   background: #1a1a1a;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow:12px #00eaff;
 }
 
 .poke-details p {
   margin: 6px 0;
 }
-
+/*this is making the results show up in a grid*/
+#results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}

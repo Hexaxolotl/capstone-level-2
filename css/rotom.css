@@ -1,3 +1,13 @@
+#cursorMon {
+  position: fixed;
+  width: 60px;       /* adjust size */
+  pointer-events: none; /* prevents blocking clicks */
+  z-index: 9999;
+  transition: transform 0.05s linear; /* smooth movement */
+}
+
+
+
 #rotomPhone {
   display: none;
 }
@@ -6,7 +16,7 @@
   text-align: center;
   padding: 20px;
 }
-
+/* this is for the homepage app grid*/
 .app-grid {
   display: grid;
   grid-template-columns: repeat(2, 120px);
@@ -14,9 +24,9 @@
   justify-content: center;
   margin-top: 20px;
 }
-
+/*this is what controls what the apps look like*/
 .app-icon {
-  background: #d00000;
+  background-image:ballApp.png;
   color: white;
   padding: 20px;
   border-radius: 20px;
@@ -25,7 +35,7 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s;
 }
-
+/*This makes the app icon have a hover effect when moused over*/
 .app-icon:hover {
   transform: scale(1.1);
 }
@@ -33,9 +43,9 @@
 
 
 
-
+/*This is the phone's css and animations*/
 #rotomPhone {
-  width: 360px;
+  width: 860px;
   margin: 20px auto;
   background: #ffffff;
   border: 6px solid #d00000; /* Crimson red but is it rotom red? */
@@ -52,7 +62,7 @@
   to { opacity: 1; transform: scale(1); }
 }
 
-/* --- TOP HEADER --- */
+/* --- header at the top of the phone --- */
 #rotomHeader {
   background: #d00000;
   color: white;
@@ -64,7 +74,7 @@
   letter-spacing: 1px;
 }
 
-/* --- SEARCH BAR --- */
+/* --- My search box --- */
 #search-box {
   width: 100%;
   padding: 10px;
@@ -74,7 +84,7 @@
   font-size: 1rem;
 }
 
-/* --- ANGULAR TABS (Gen 8 style) --- */
+/* --- tab styles. tried to make it more pokemonish --- */
 .tab {
   background: #333;
   color: white;
@@ -86,7 +96,7 @@
 
 
 
-/* --- DATA SCREEN --- */
+/* --- my display screen--- */
 #pokeScreen {
   background: #f5f5f5;
   border-left: 5px solid #d00000;
@@ -96,7 +106,7 @@
   font-size: 1rem;
 }
 
-/* --- BUTTONS --- */
+/* --- buttons --- */
 button {
   background: #d00000;
   color: white;
@@ -114,7 +124,8 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* --- TEAM DISPLAY --- */
+
+/* --- team display--- */
 #teamDisplay {
   margin-top: 20px;
   background: #fff;
