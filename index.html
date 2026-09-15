@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pokédex</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
-  </head>
-  <body>
-    <main>
-      <h1>Pokédex</h1>
-    </main>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pokédex</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
+		<link rel="stylesheet" href="css/hero.css">
+		<link rel="stylesheet" href="css/card.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="./css/rotom.css">
+	</head>
+	<body>
+		<main>
+			<nav>
+				<ul>
+					
+				</ul>
+			</nav>
+			<div class="hero">
+				<h1>Pokédex</h1>
+				<p>A trainer can make their fantasy team from this Pokédex.</p>
+			</div>
+			
+			<section id="search">
+				<h2>Search</h2>
+				<p>There will be a box they can search up Pokémon.</p>
+				<input id="search-bar" type="text" placeholder="Search for Pokémon">
+
+			</section>
+			
+			<section id="results">
+				<h2>Results</h2>
+				<p>The results will show a picture of the Pokémon and it's information.</p>
+				<button id="backBtn" type="button">Back</button>
+				<button id="nextBtn" type="button">Next</button>
+				<button id="saveBtn" type="button">Save to team</button>
+				<button id="restartBtn" type="button">Start over</button>
+			</section>
+			
+			<section id="about">
+				<h2>About the data</h2>
+				<p>information on all 802 Pokemon from only Seven Generations of Pokemon, from a table in Code.org's Data Library.</p>
+			</section>
+			
+		</main>
+		<footer>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>

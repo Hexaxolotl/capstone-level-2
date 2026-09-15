@@ -10,6 +10,28 @@
 	How about to train them, is that your cause?
 	Is this your destiny?!
 
+## The plan
+
+	![My wireframe](wireframe.png)
+	
+### Sections
+	pokedex selections
+	pokemon lists
+	pokemon team save
+	pokemon map
+
+### User input
+		A visitor clicks the Pokedex app and the page will show the pokedex. — a button, or a row of buttons with one per choice.
+		A visitor can search for pokemon's name and the page will show the pokemon. — a box they type into.
+		A visitor can save(fav) the selected pokemon and the page will add it to a list. — a checkbox(or a heart) and it will add it to a list.
+
+### Outputs
+	each result will show the pokedex pokemon page example: 
+			id: 1
+			name: Bulbasaur
+			ability: Overgrow
+			type: grass
+	
 ## Data
 
 	Dataset: Pokedex
