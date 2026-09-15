@@ -17,28 +17,52 @@
 					
 				</ul>
 			</nav>
-			<div class="hero">
-				<h1>Pokédex</h1>
-				<p>A trainer can make their fantasy team from this Pokédex.</p>
+			
+			<div id="homeScreen">
+				<h2>Rotom Phone</h2>
+				
+				<div class="app-grid">
+					<div class="app-icon" id="pokedexApp">Pokédex</div>
+					<div class="app-icon">Map</div>
+					<div class="app-icon">Trainer Card</div>
+					<div class="app-icon">Settings</div>
+				</div>
 			</div>
 			
-			<section id="search">
-				<h2>Search</h2>
-				<p>There will be a box they can search up Pokémon.</p>
-				<input id="search-box" type="text" placeholder="Search for Pokémon">
-
-			</section>
+			<div id="rotomPhone">
+				
+				<div id="rotomHeader">Rotom Phone Dex</div>
+				
+				<section id="search">
+					<input id="search-box" type="text" placeholder="Search Pokémon">
+					<button id="searchBtn" type="button">Search</button>
+				</section>
+				
+				<div class="tab">Pokémon Data</div>
+				
+				<section id="results">
+					<img id="pokeImg" alt="Pokémon image">
+					<p id="pokeScreen"></p>
+					<div id="pokeCard">
+						<div class="poke-header"></div> <!-- Name, ID, Type, Ability -->
+						<div class="poke-stats"></div> <!-- HP, Attack, Defense, etc -->
+						<div class="poke-details"></div> <!-- Height, Weight, Capture Rate, etc -->
+					</div>
+					
+					
+					<button id="backBtn">Back</button>
+					<button id="nextBtn">Next</button>
+					<button id="saveBtn">Save to team</button>
+					<button id="restartBtn">Start over</button>
+				</section>
+				
+				<div class="tab">Your Team</div>
+				
+				<div id="teamDisplay"></div>
+				
+			</div>
 			
-			<section id="results">
-				<h2>Results</h2>
-				<p>The results will show a picture of the Pokémon and it's information.</p>
-				<img id="pokeImg" alt="Pokémon image">
-				<p id="pokeScreen"></p>
-				<button id="backBtn" type="button">Back</button>
-				<button id="nextBtn" type="button">Next</button>
-				<button id="saveBtn" type="button">Save to team</button>
-				<button id="restartBtn" type="button">Start over</button>
-			</section>
+			
 			
 			<section id="about">
 				<h2>About the data</h2>
@@ -48,6 +72,6 @@
 		</main>
 		<footer>
 		</footer>
-		<script src="script.js"></script>
+		<script defer src="script.js"></script>
 	</body>
 </html>
