@@ -9,13 +9,32 @@ let restartButton = document.getElementById("restartBtn");
 
 nextButton.addEventListener("click", function () {
   document.getElementById("pokeScreen").textContent = searchBox.value;
+   loadRecords();
 });
 
 
-let showTeam = document.getElementById("show-team");
-let show = document.getElementById("show-10");
-let showTwenty = document.getElementById("show-20");
+/*let showTeam = document.getElementById("show-team");
 
 showTeam.addEventListener("click", function () {
   document.getElementById("pokeScreen").textContent = "5";
+});*/
+
+
+async function loadRecords() {
+  let response = await fetch("https://student-data-api.alana-duke25.workers.dev/api/v1/datasets/pokedex/records?search=" + searchBox.value);
+  console.log("Status: " + response.status);
+
+  let data = await response.json();
+  let records = data.records;
+  console.log("Records: " + records.length);
+  if (records.length > 0) {
+  let first = records[0];
+
+  document.getElementById("pokeScreen").textContent =
+    first.Name + " | Type: " + first.Type + " | #" + first.Number;
+	document.getElementById("pokeImg").src = first.Image;
+}
+
 });
+
+
