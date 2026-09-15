@@ -1,0 +1,21 @@
+let searchBox = document.getElementById("search-box");
+let backButton = document.getElementById("backBtn");
+let nextButton = document.getElementById("nextBtn");
+let saveButton =document.getElementById("saveBtn");
+let restartButton = document.getElementById("restartBtn");
+
+
+
+
+nextButton.addEventListener("click", function () {
+  document.getElementById("pokeScreen").textContent = searchBox.value;
+});
+
+
+let showTeam = document.getElementById("show-team");
+let show = document.getElementById("show-10");
+let showTwenty = document.getElementById("show-20");
+
+showTeam.addEventListener("click", function () {
+  document.getElementById("pokeScreen").textContent = "5";
+});
