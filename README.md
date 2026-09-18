@@ -17,6 +17,7 @@
 ## What changed
 
 	I changed how I want the layout of the information.
+	I changed how much information will be in the project.
 
 
 ### Sections
@@ -88,3 +89,11 @@
 
 	- Live: https://hexaxolotl.github.io/capstone-level-2/
 	- Repo: https://github.com/hexaxolotl/capstone
+	
+	
+## Credit
+Credit to the creators whose projects sparked the ideas behind my version of this concept.
+
+  👉@Paktion
+  👉@wikicode96 
+  👉Oryam 

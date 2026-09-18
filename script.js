@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	let allRecords = [];
 	let currentIndex = 0;
 	let pokedexApp = document.getElementById("pokedexApp");
+	let offset = 0;
+	let limit = 20;
 	
 	//this is the event for my pokedex app button.
 	//it means once you click on the pokedex button
@@ -41,7 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		currentIndex++;
 		if (currentIndex >= allRecords.length) {
 			currentIndex = 0;
-		}
+			offset=offset+20;
+			loadRecords();
+		} 
 		showCurrentPokemon();
 	});
 	
@@ -52,6 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		currentIndex--;
 		if (currentIndex < 0) {
 			currentIndex = allRecords.length - 1;
+			offset=offset-20;
+			loadRecords();
 		}
 		showCurrentPokemon();
 	});
@@ -113,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		`;
 	}
 	
-	// DISPLAY TEAM
+	// should display the team, however at this time there isn't any avator only a name.
 	function displayTeam() {
 		let box = document.getElementById("teamDisplay");
 		box.innerHTML = "";
@@ -125,18 +131,18 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 	
-	// LOAD RECORDS
+	// loading my records https://student-data-api.alana-duke25.workers.dev/api/v1/datasets/pokedex/records?search=x&limit=10&offset=10
 	async function loadRecords() {
 		let response = await fetch(
 			"https://student-data-api.alana-duke25.workers.dev/api/v1/datasets/pokedex/records?search=" 
-			+ searchBox.value
+			+ searchBox.value + "&limit=20" + "&offset=" + offset
 		);
 		
 		let data = await response.json();
 		allRecords = data.records;
 		
 		if (allRecords.length > 0) {
-			currentIndex = 0;
+			//currentIndex = 0;
 			showCurrentPokemon();
 		}
 	}
