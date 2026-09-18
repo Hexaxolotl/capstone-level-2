@@ -12,12 +12,20 @@
 
 ## The plan
 
-	![My wireframe](wireframe.png)
+	![My wireframe](./images/wireframe.png)
 	
 ## What changed
 
 	I changed how I want the layout of the information.
 	I changed how much information will be in the project.
+
+## How the request reaches my API
+
+	A visitor types in a pokemons name into the search bar and presses "search".
+	The page puts that name into the address it asks my API for.
+	My API answers with the records that contain the name, in 'data.records'.
+	The page shows the information on the pokedex screen. The visitor can also
+	click next or back. Clicking save will save the name of their favorite pokemon below the pokedex.
 
 
 ### Sections
