@@ -12,7 +12,7 @@
 
 ## The plan
 
-	![My wireframe](./images/wireframe.png)
+	![My wireframe](/images/wireframe.png)
 	
 ## What changed
 
