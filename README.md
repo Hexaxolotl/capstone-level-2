@@ -12,12 +12,12 @@
 
 ## The plan
 
-	![My wireframe](/images/wireframe.png)
+![My wireframe](./images/wireframe.png)
 	
 ## What changed
 
-	I changed how I want the layout of the information.
-	I changed how much information will be in the project.
+I changed how I want the layout of the information.
+I changed how much information will be in the project.
 
 ## How the request reaches my API
 
